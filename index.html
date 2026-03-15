@@ -14,7 +14,7 @@
       This prevents JavaScript from trying to access elements
       that haven't been created yet.
    -->
-  
+  <script src="random-info.js" defer></script>
 </head>
 
 <body>
@@ -62,7 +62,7 @@
              We are using onclick here because it is easier to understand
              for beginners. Later exercises will introduce event listeners.
         -->
-        
+        <button onclick="showInfo()">Show a Cat</button>
 
       </div>
 
@@ -72,7 +72,7 @@
            The id="info" allows JavaScript to locate this element
            using document.getElementById().
       -->
-      <div>Click the button to see a random cat name</div>
+      <div id="info">Click the button to see a random cat name</div>
 
     </section>
 
